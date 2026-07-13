@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RYAN PORTFOLIO — THROUGH THE CENEMATIC EXPERIENCE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Cinematic Intro -->
+  <div id="intro" class="intro">
+    <canvas id="intro-canvas"></canvas>
+
+    <div class="letterbox letterbox-top"></div>
+    <div class="letterbox letterbox-bottom"></div>
+    <div class="vignette"></div>
+    <div class="film-grain"></div>
+    <div class="chromatic"></div>
+
+    <div class="intro-overlay">
+      <p class="intro-tagline" data-phase="tagline">WELCOME I'M</p>
+      <h1 class="intro-title" aria-label="BEYOND">
+        <span class="title-char">R</span>
+        <span class="title-char">Y</span>
+        <span class="title-char">A</span>
+        <span class="title-char">N</span>
+      </h1>
+      <p class="intro-sub" data-phase="sub">I'M A WEB DEVELOPER AND DESIGNER</p>
+    </div>
+
+    <div class="hyperspace" aria-hidden="true">
+      <div class="hyperspace-ring"></div>
+      <div class="hyperspace-ring"></div>
+      <div class="hyperspace-ring"></div>
+    </div>
+
+    <div class="flash" aria-hidden="true"></div>
+    <div class="countdown-bar"><div class="countdown-fill"></div></div>
+
+    <button class="skip-btn" id="skip-btn" type="button">Skip Intro</button>
+    <button class="sound-btn" id="sound-btn" type="button" aria-label="Enable sound">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+    </button>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main" class="main hidden">
+    <nav class="nav">
+      <span class="nav-logo">PORTFOLIO</span>
+      <div class="nav-links">
+        <a href="#vision">Vision</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Creative Developer • Graphic Designer • Digital Creator</p>
+        <h2 class="hero-heading">I Don't Just Create Designs.<br /> Create Digital Experiences.</h2>
+        <p class="hero-text"> From cinematic websites to high-converting brand visuals, every project is crafted with creativity, precision, and innovation. Explore my work and experience design beyond the ordinary.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="replay-btn" type="button">View Portfolio</button>
+          <a class="btn btn-ghost" href="#experience">Explore My Work</a>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <section id="vision" class="section">
+      <div class="section-inner">
+        <span class="section-num">01</span>
+        <h3>Vision</h3>
+        <p>Every frame is a universe. Every second, a story waiting to unfold across dimensions we haven't named yet.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-alt">
+      <div class="section-inner">
+        <span class="section-num">02</span>
+        <h3>Experience</h3>
+        <p>Immersive. Cinematic. Unforgettable. Built at the intersection of art, technology, and wonder.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-bg"></div>
+    
+      <div class="section-inner">
+    
+        <span class="section-num">05</span>
+    
+        <p class="contact-eyebrow">
+          THE FINAL FRAME
+        </p>
+    
+        <h2 class="contact-title">
+          My creativity.<br>
+         Together, we'll create something<br>
+          People Can't Ignore.
+        </h2>
+    
+        <p class="contact-description">
+          Let's Build Something Extraordinary.
+
+          Whether you need a modern website, eye-catching graphic design, branding, or a custom digital solution, I'd love to hear about your ideas. Every great project starts with a simple conversation.
+          
+          Fill out the form below with your name, email, phone number, and a brief message about your project. I'll review your inquiry and get back to you as soon as possible.
+          
+          Your vision. 
+          
+        </p>
+    
+        <div class="contact-buttons">
+          <a href="mailto:your@email.com" class="btn btn-primary">
+            Start Your Project
+          </a>
+    
+          <a href="#portfolio" class="btn btn-secondary">
+            View My Work
+          </a>
+        </div>
+    
+        <div class="contact-footer">
+          <span>Graphic Designer</span>
+          <span>•</span>
+          <span>Web Developer</span>
+          <span>•</span>
+          <span>Creative Problem Solver</span>
+        </div>
+    
+      </div>
+    </section>
+
+    
+
+    <footer class="footer">
+      <span>&copy of; 2026 Ryan portfolio WebPage</span>
+    </footer>
+  </main>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
